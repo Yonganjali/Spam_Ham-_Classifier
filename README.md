@@ -36,7 +36,23 @@ The final classifier uses:
 - Text preprocessing
 - TF-IDF Vectorization
 - Linear Support Vector Machine (LinearSVC)
+## Model Performance
 
+The final model was evaluated on the test dataset.
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | 98.16% |
+| Precision | 98.28% |
+| Recall | 87.02% |
+| F1 Score | 92.31% |
+
+The model achieved an accuracy of 98.16% on the test set.
+The precision of 98.28% indicates that most messages predicted
+as spam were actually spam. The recall of 87.02% indicates that
+the model successfully identified most of the actual spam messages.
+The F1 score of 92.31% shows a strong balance between precision
+and recall.
 ## Deployment
 
 The application is deployed using Streamlit Community Cloud.
