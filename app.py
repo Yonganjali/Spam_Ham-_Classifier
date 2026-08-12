@@ -8,7 +8,7 @@ def load_model():
     return joblib.load("spam_ham_classifier.pkl")
 
 model = load_model()
-
+st.write("Model classes:", model.classes_)
 st.title("📩 Spam/Ham Message Classifier")
 
 message = st.text_area(
