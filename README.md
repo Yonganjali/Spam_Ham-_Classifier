@@ -53,6 +53,16 @@ as spam were actually spam. The recall of 87.02% indicates that
 the model successfully identified most of the actual spam messages.
 The F1 score of 92.31% shows a strong balance between precision
 and recall.
+### Confusion Matrix
+
+| | Predicted Ham | Predicted Spam |
+|---|---:|---:|
+| Actual Ham | 901 | 2 |
+| Actual Spam | 17 | 114 |
+
+The model correctly classified 901 Ham messages and 114 Spam
+messages. It incorrectly classified 2 Ham messages as Spam and
+17 Spam messages as Ham.
 ## Deployment
 
 The application is deployed using Streamlit Community Cloud.
