@@ -1,7 +1,7 @@
 
 import streamlit as st
 import joblib
-
+from text_preprocessor import TextPreprocessor
 # Load model
 @st.cache_resource
 def load_model():
