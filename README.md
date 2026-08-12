@@ -36,6 +36,25 @@ The final classifier uses:
 - Text preprocessing
 - TF-IDF Vectorization
 - Linear Support Vector Machine (LinearSVC)
+## Hyperparameter Tuning
+
+GridSearchCV with 5-fold cross-validation was used to find the
+best hyperparameters for the TF-IDF and LinearSVC components.
+
+### Best Parameters
+
+| Parameter | Selected Value |
+|---|---|
+| SVM C | 1 |
+| SVM class weight | None |
+| TF-IDF max features | 10,000 |
+| TF-IDF min df | 1 |
+| TF-IDF n-gram range | (1, 2) |
+
+The best cross-validation F1 score was **91.58%**.
+
+The TF-IDF vectorizer uses both unigrams and bigrams, allowing the
+model to consider individual words as well as two-word combinations.
 ## Model Performance
 
 The final model was evaluated on the test dataset.
@@ -63,6 +82,7 @@ and recall.
 The model correctly classified 901 Ham messages and 114 Spam
 messages. It incorrectly classified 2 Ham messages as Spam and
 17 Spam messages as Ham.
+
 ## Deployment
 
 The application is deployed using Streamlit Community Cloud.
