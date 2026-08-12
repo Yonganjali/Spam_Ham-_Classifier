@@ -92,3 +92,16 @@ The application is deployed using Streamlit Community Cloud.
 1. Enter a message.
 2. Click "Classify Message".
 3. The application predicts whether the message is Spam or Ham.
+## Limitations
+
+- The model's performance depends on the quality and diversity of the training dataset.
+- Some unusual or previously unseen spam messages may be classified incorrectly.
+- The model achieved a recall of 87.02%, meaning some spam messages may still be classified as Ham.
+- The classifier is designed for text messages and may not perform equally well on other types of content.
+## Future Improvements
+
+- Increase the size and diversity of the training dataset.
+- Explore additional machine learning and deep learning models.
+- Improve recall to reduce the number of spam messages classified as Ham.
+- Continuously update the dataset with new spam patterns.
+- Add more advanced NLP techniques for better classification of complex messages.
